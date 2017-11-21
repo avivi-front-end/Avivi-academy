@@ -2,7 +2,76 @@
 <div class="global-wrapper">
     //= partials/event-header.html
     //= partials/event-content.html
-    //= partials/contacts.html
+    <div class="contacts">
+        <div class="mbox">
+            <div class="contacts__content">
+                <div class="contacts__left">
+                    <div class="contacts__left-head">
+                        <h2>Контакти</h2>
+                    </div>
+                    <div class="contacts__rows">
+                        <div class="contacts__location contacts__row">
+                            <div class="contacts__content-row">
+                                <div class="contacts__row-img">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                        <!--<img src="../images/point.png" alt="">-->
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>м. Хмельницький</p>
+                                    <p>вул. Подільська, 109</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__phone contacts__row">
+                            <a href="tel:+380674001182" class="contacts__content-row">
+                                <div class="contacts__row-img">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>+38 </span>
+                                <span>067 400 11 82</span>
+                            </a>
+                        </div>
+                        <div class="contacts__mail contacts__row">
+                            <a href="mailto:hello@avivi.academy" class="contacts__content-row">
+                                <div class="contacts__row-img contacts__img-hover">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#mail"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p>hello@avivi.academy</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__right">
+                    <div class="contacts__right-head">
+                        <h2>Пiдписатись На Оновлення</h2>
+                    </div>
+                    <div class="contacts__right-content">
+                        <form action="">
+                            <input type="text" placeholder="Прізвище Ім'я" required="required">
+                            <input type="text" placeholder="Електронна Пошта" required="required">
+                            <p></p>
+                            <textarea name="" id="" cols="10" rows="10" placeholder="Повідомлення"></textarea>
+                            <div class="contacts__right-button">
+                                <input type="submit" value="Написати">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     //= partials/hidden-block.html
     //= partials/footer.html
 </div>
