@@ -1,0 +1,47 @@
+.event{
+    &-header{height: 490px;}
+    h2{text-align: center; margin: 0 -15px; font-size: 75px; color: #013021; margin: 1.45em 0 1.1em;}
+    &-wrap{padding-bottom: 55px; display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0 -15px;}
+    &__block{width: 47%; margin: 0 15px; position: relative; border: 1px solid #ebebeb; border-radius: 5px; margin-bottom: 30px;
+        &--big{width: 100%;
+            .event__social-links{bottom: 17px; right: 30px;}
+            .event__text{display: flex; align-items: center; padding: 19px 70px 3px 32px;}
+            .event__img{height: 288px;}
+            .event-date{width: 162px; flex-direction: row; margin-right: 40px; justify-content: space-between; float: none;
+                &__date{line-height: 50px;}
+            }
+            .event__title{margin-right: 89px; margin-top: 15px; width: 260px; flex-shrink: 0; padding-right: 10px;}
+            .event-date__date{margin-right: 17px;}
+            p{margin-top: 12px;}
+        }
+    }
+    &__img{height: 218px; background: #0d8667; border-radius: 5px 5px 0 0; overflow: hidden;
+        img{object-fit: cover; height: 100%; width: 100%;}
+    }
+    &__social-links{z-index: 20; display: flex; position: absolute; bottom: 32px; right: 40px;
+        a{
+            &:not(:last-child){margin-right: 20px;}
+        }
+        svg{fill: #a6a6a6;}
+    }
+    &-date{display: flex; flex-direction: column; float: left; margin: 0 17px 0 0;
+        &__date{font-size: 60px; color: #0d8265; font-weight: 700; line-height: 58px;}
+        &__month{font-family: "ProximaNovaCond", Arial, sans-serif; text-transform: uppercase; font-size: 18px; letter-spacing: 2px; color: #4f4f4f; line-height: 23px;}
+        &__year{font-size: 20px; color: #363636; letter-spacing: 10px;}
+    }
+    &__text{padding: 19px 70px 17px 32px;}
+    &__title{font-size: 29px; color: #353535; margin-bottom: 22px; line-height: 34px;}
+    p{margin-top: 0; font-size: 16px; line-height: 22px; color: #363636; margin-bottom: 26px;}
+}
+@media(max-width: 1050px){
+    .event{
+        &__block{width: 46%;
+            &--big{width: 100%;}
+        }
+    }
+}
+@media(max-width: 992px){
+    .event{
+        &__block{width: 100%;}
+    }
+}
