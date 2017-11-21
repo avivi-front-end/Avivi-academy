@@ -354,6 +354,12 @@ h4{font-size: 20px;}
 }
 
 
+.contacts__right-content.course-list-cotacts {
+    margin-top: 120px;
+    .contacts__right-button {
+        margin-top: 50px;
+    }
+}
 
 .slick-next { right: 15px;}
 .slick-prev { left: 15px;}
@@ -806,9 +812,11 @@ h4{font-size: 20px;}
     .program__get-program { flex-direction: column;
         p {margin: 10px 0; text-align: center;}
     }
+    .contacts__right.contacts-fix {padding-right: 10px;}
 }
 
 @media screen and (max-width: 637px){
+    .course-list .green-zone__buttons {margin-top: 30px;}
     .about__right {
         padding: 0 20px;
     }
@@ -923,6 +931,14 @@ h4{font-size: 20px;}
     .contacts__right-content form textarea{ width: 100%;}
     .contacts__left {padding-left: 0; padding-right: 0;}
     .contacts__phone a span:last-child {font-size: 19px;}
+
+    .contacts__right-button.contacts__for-course {width: 210px;
+        input {width: 210px;}
+    }
+    .contacts__right-button.contacts__for-course:hover {
+        &:after {width: 220px;}
+    }
+    .contacts__right.contacts-fix {padding-right: 0px;}
 
 }
 @media screen and (max-width: 350px){
