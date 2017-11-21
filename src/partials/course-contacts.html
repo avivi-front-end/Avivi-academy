@@ -55,11 +55,22 @@
                     <h2>Напишіть Нам</h2>
                 </div>
                 <div class="contacts__right-content">
-                    <form action="">
-                        <input type="text" placeholder="Прізвище Ім'я" required="required">
-                        <input type="text" placeholder="Електронна Пошта" required="required">
-                        <input type="text" placeholder="Номер Телефону" required="required">
-                        <input type="text" placeholder="Дата Народження" required="required">
+                    <form action="" id="valid-form">
+                        <div class="js-input">
+                            <input type="text" placeholder="Прізвище Ім'я" required="required" name="username">
+                        </div>
+                        <div class="js-input">
+                            <input type="text" placeholder="Електронна Пошта" required="required" name="email">
+                        </div>
+                        <div class="js-input">
+                            <input type="text" placeholder="Номер Телефону" required="required" class="tel-mask">
+                        </div>
+                        <div class="js-input">
+                            <input type="text" placeholder="Дата Народження">
+                        </div>
+
+
+
                         <p></p>
                         <div class="contacts__right-button contacts__for-course">
                             <input type="submit" value="Зареєструватись">

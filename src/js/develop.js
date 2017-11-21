@@ -111,6 +111,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -118,6 +120,7 @@ $(document).ready(function () {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
+
                 }
             },
             {
@@ -138,11 +141,14 @@ $(document).ready(function () {
     });
 
     $('.cources__colls').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
+
         responsive: [
             {
                 breakpoint: 1024,
