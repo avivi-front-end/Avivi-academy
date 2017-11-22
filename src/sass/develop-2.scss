@@ -94,10 +94,12 @@
 }
 @media (min-width: 550px) and (max-width: 992px){
     .event{
-        &--big{
-            .event{
-                &-date{display: flex; float: left;  width: auto; margin-right: 17px; flex-direction: column;
-                    &__date{margin-right: 0;}
+        &__block{
+            &--big{
+                .event{
+                    &-date{display: flex; float: left;  width: auto; margin-right: 17px; flex-direction: column;
+                        &__date{margin-right: 0;}
+                    }
                 }
             }
         }
@@ -144,6 +146,7 @@
 @media(max-width: 550px){
     .event{
         h2{display: none;}
+        &__text{display: flex;}
         &-date{flex-direction: row; float: none; width: 162px; justify-content: space-between;
             &__date{margin-right: 17px; line-height: 50px;}
         }
