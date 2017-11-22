@@ -89,16 +89,19 @@
     .contacts__left-head h3 {font-size: 65px;}
     .courses-page h2 {font-size: 65px;}
     .mentors__content h2 {font-size: 65px;}
+    .course-list h1 {font-size: 45px;}
+    .course-list .green-zone__chapter p{font-size: 20px;}
 }
 
 @media screen and (max-width: 1025px){
-    .green-zone__chapter h1 {font-size: 58px;}
+    .green-zone__chapter h1 {font-size: 45px;}
     .course-list .green-zone__buttons {margin-top: 55px;}
+    .courses-page .green-zone__chapter {height: 75%;}
 }
 
 
 @media screen and (max-width: 1015px){
-    .courses-page .green-zone__chapter {height: 75%;}
+
 }
 @media screen and (max-width: 985px){
     .green-zone__chapter h1{margin-bottom: 10px;}
@@ -155,7 +158,10 @@
     a.green-zone__details {margin-left: 0;}
     .green-zone__logo img {min-width: auto; width: 190px;}
     .courses-page .green-zone__chapter h1 {font-size: 58px; }
-    .courses-page .green-zone__buttons {margin-top: 60px;}
+    .courses-page .green-zone__buttons {margin-top: 60px;
+        a {margin: 10px;}
+    }
+
 }
 
 .show-menu {transform: scaleY(1); opacity: 1;}
@@ -272,10 +278,21 @@ ul {text-align: left;}
 
 }
 
+@media screen and (max-width: 661px){
+    .courses-page .green-zone__buttons a{margin-top: 0px;}
+    .courses-page .green-zone__buttons {justify-content: center;}
+    .courses-page .green-zone__buttons .btn{margin-left: 10px;}
+}
+
 @media screen and (max-width: 648px){
     .main-header .green-zone__buttons {justify-content: center; margin-top: 0;
         a {margin: 5px;}
     }
+    .course-list .green-zone__buttons {justify-content: center; margin-top: 0;}
+    .course-list .green-zone__buttons a{margin: 10px;}
+    .course-list .green-zone__buttons .btn{margin-left: 10px;}
+    .course-list .green-zone__buttons .green-zone__button-detais{ margin-bottom: 0px;}
+
 }
 
 @media screen and (max-width: 631px){
