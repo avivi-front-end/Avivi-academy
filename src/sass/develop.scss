@@ -110,6 +110,7 @@ input, textarea{
 
 h1{font-size: 75px;}
 h2{font-size: 75px;}
+h3{font-size: 60px;}
 h4{font-size: 20px;}
 
 
@@ -142,6 +143,9 @@ h4{font-size: 20px;}
     &.login__input input{border-color: #ff3030;}
 }
 
+.main-header {
+    .btn {margin-left: 20px;}
+}
 
 .green-zone {width: 100%; height: auto; background-repeat: no-repeat; z-index: 20;
     &>img { position: absolute; z-index: 50; clip-path: inset(0px 1920px 0px -470px); width: 100%; object-fit: cover;}
@@ -236,7 +240,7 @@ h4{font-size: 20px;}
         transition: all linear .3s;
     }
 }
-a.btn {margin-left: 20px;}
+
 
 
 .quests-zone {padding-top: 100px; padding-bottom: 100px; margin-bottom: 20px;
@@ -256,22 +260,22 @@ a.btn {margin-left: 20px;}
             input {opacity: 0;}
 
             i {width: 165px; height: 165px; border-color: #0d8265;  position: relative; display: flex; align-items: center; justify-content: center;  transition: all 0.1s;
-                &:hover {background-color: #0d8265; border-color: #0d8265;}
+                &:hover {background-color: #f7f7f7;}
 
             }
-            input:checked + i{ background-color: #0d8265; opacity: 1; border-color: #0d8265;
+            input:checked + i{ background-color: #0d8265; opacity: 1; border-color: #e8e8e8;
             }
             input:checked ~ i span {color: #ffffff; z-index: 10;}
-            i {width: 165px; height: 165px; border-color: #0d8265; position: relative;  display: flex; align-items: center; justify-content: center;
+            i {width: 165px; height: 165px; border-color: #e8e8e8; position: relative;  display: flex; align-items: center; justify-content: center;
 
 
             }
 
             &:first-child i { border-top-left-radius: 5px; border-top-right-radius: 5px; border: 1px solid #e8e8e8; border-bottom: none; cursor: pointer;
-                &:hover {border-color: #0d8265;}
+                &:hover {border-color: #e8e8e8;}
             }
             &:last-child i { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; border: 1px solid #e8e8e8; border-top: none; cursor: pointer;
-                &:hover {border-color: #0d8265;}
+                &:hover {border-color: #e8e8e8;}
             }
         }
     }
@@ -426,12 +430,12 @@ a.btn {margin-left: 20px;}
     &__right-button .btn{padding: 22px 65px;}
     &__content {display: flex;}
     &__left { width: 50%;
-        h2 {color: #013021;}
+        h3 {color: #013021;}
     }
     &__right { background-color: #0d8164; width: 50%; position: relative;
         &:after {content: ''; height: 100%; width: 100%; top: 0; left: 95%; background-color: #248c72; display: block; position: absolute; z-index: -1;}
         &:before {content: ''; height: 100%; width: 100%; top: 0; background-color: #248c72; position: absolute; z-index: -1; display: none; right: 100%;}
-        h2 {color: #ffffff;}
+        h3 {color: #ffffff;}
     }
     &__row {margin-bottom: 70px; display: table;
     }
@@ -600,7 +604,7 @@ a.btn {margin-left: 20px;}
     &__content {padding-top: 10px; padding-bottom: 50px;}
     h2 {color: #013021; text-align: center;}
     &__get-program { display: flex; justify-content: space-between; align-items: center;
-        p {font-weight: 300; font-size: 18px; width: 60%; padding-right: 15px;
+        p {font-weight: 300; font-size: 18px; width: 60%; padding-right: 15px; line-height: 25px;
         }
         a { text-transform: uppercase; color: white; background-color: #0d8265; border: 4px solid #dfebe8; padding: 15px 30px; text-decoration: none; font-size: 18px; white-space: nowrap; border-radius: 8px; line-height: 18px; letter-spacing: 3px; display: flex; align-items: center; flex-grow: 0; transition: all 0.2s;
             &:hover {background-color: #22ae8c; color: #000000;}
@@ -685,354 +689,5 @@ a.btn {margin-left: 20px;}
 
 
 
-@keyframes move-left {
-    from {
-        opacity: 0;
-        left: 50%;
-    }
-    to {
-        opacity: 1;
-        left: 0%;
-    }
-}
 
-@keyframes move-coll {
-    0% {
-        clip-path: inset(0px 100% 0px -24.4%);
-    }
-
-    100% {
-        clip-path: inset(0px 20% 0px 56.6%);
-    }
-}
-
-@media screen and (max-width: 1315px){
-    .courses-page {
-        .green-zone__buttons {margin-top: 20px;}
-    }
-}
-
-@media screen and (max-width: 1310px){
-    .courses-page h1 {font-size: 68px;}
-}
-
-@media screen and (max-width: 1250px){
-    .green-zone__phone span{font-size: 16px; }
-    .green-zone__phone span:last-child {font-size: 16px;}
-    .green-zone__phone img {margin-right: 10px;}
-    .contacts {padding: 0 0px;}
-}
-
-@media screen and (max-width: 1250px){
-    .green-zone__phone span{font-size: 12px; }
-    .green-zone__phone span:last-child {font-size: 14px;}
-    .green-zone__phone img {margin-right: 10px;}
-    .green-zone__header-right {width: 26.75%;}
-
-    .courses-page .green-zone__buttons {margin-top: 20px;}
-
-}
-
-@media screen and (max-width: 1200px){
-    .courses-page h1 {font-size: 60px;}
-}
-
-
-@media screen and (max-width: 1135px){
-    .contacts__right {padding-left: 20px;}
-    .courses-page h1 {font-size: 50px;}
-    .green-zone__buttons {flex-wrap: wrap; justify-content: flex-end; margin-top: 20px;
-    }
-    .transparent-btn {padding: 18px 78px;}
-    a.btn {padding: 18px 46px;}
-}
-
-@media screen and (max-width: 1120px){
-    .courses-page h1 {font-size: 45px; margin-bottom: 15px;}
-}
-
-@media screen and (max-width: 1100px){
-    .green-zone__menu ul {padding-right: 50px;}
-    .green-zone__chapter h1 {font-size: 65px;}
-    .courses-page .green-zone__chapter h1 {font-size: 45px;}
-}
-@media screen and (max-width: 1097px){
-    .quests-zone__button {margin-top: 20px;}
-}
-
-
-
-
-
-@media screen and (max-width: 1080px){
-    .mentors__people { flex-wrap: wrap;}
-    .mentors__person {width: 100%; margin: 10px 0;}
-
-}
-
-@media screen and (max-width: 1055px){
-    .contacts__right-head h2 {font-size: 65px;}
-    .contacts__left-head h2 {font-size: 65px;}
-    .courses-page h2 {font-size: 65px;}
-    .mentors__content h2 {font-size: 65px;}
-}
-
-@media screen and (max-width: 1025px){
-    .green-zone__chapter h1 {font-size: 58px;}
-   .course-list .green-zone__buttons {margin-top: 55px;}
-}
-
-
-@media screen and (max-width: 1015px){
-    .courses-page .green-zone__chapter {height: 75%;}
-}
-@media screen and (max-width: 985px){
-    .green-zone__chapter h1{margin-bottom: 10px;}
-}
-
-
-@media screen and (max-width: 962px){
-    .contacts__right-head h2 {font-size: 58px}
-    .contacts__left-head h2 {font-size: 58px}
-    .courses-page h2 {font-size: 58px;}
-    .mentors__content h2 {font-size: 58px;}
-}
-
-@media screen and (max-width: 950px){
-    .quests-zone__button {margin-top: 20px;}
-}
-@media screen and (max-width: 945px){
-
-}
-
-@media screen and (max-width: 940px){
-    .cources__colls {flex-wrap: wrap;}
-    .cources__col {width: 50%; padding: 10px; }
-    .cources__img {margin-bottom: 10px;}
-    .cources__colls { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 30px;}
-    .courses-page .green-zone__chapter h1 {font-size: 40px; margin-bottom: 5px;}
-    .green-zone__chapter p{font-size: 20px;}
-}
-
-@media screen and (max-width: 935px){
-    .green-zone__phone img {margin-right: 5px;}
-}
-
-
-
-@media screen and (max-width: 922px) {
-    .green-zone__chapter {opacity: 1; left: 0%; animation-name: none;}
-    .green-zone__cross {display: flex; position: absolute; right: 30px; top: 30px;}
-    .green-zone__logo {top: 4px;}
-    .green-zone__split {display: none;}
-    .green-zone__menu {margin-left: 0; width: 100%; border: none; position: absolute; top: 0;  justify-content: flex-end;  flex-direction: column; height: 100%; text-align: center; background-color: rgba(0,50,35,0.7); transform: scaleY(0); transform-origin: 0 -100%;  display: flex; transition: all 0.4s;}
-    .green-zone__hoverer { visibility: hidden;}
-    .green-zone>img { display: none;}
-    .green-zone__menu ul{  display: block; padding: 0; width: 100%;}
-    .green-zone__menu ul li{ padding: 25px 0;}
-    .green-zone__menu ul a {padding: 0;}
-    .green-zone__content > img {min-height: 480px; object-fit: cover;}
-    .green-zone__header {height: 100%;}
-    .green-zone__header-right {width: 100%;}
-    .green-zone__phone {padding-bottom: 55px; padding-top: 55px;}
-    .green-zone__chapter {width: 100%; align-items: center; justify-content: center; text-align: center;}
-    .footer__main {display: none;}
-    .footer__mobile {display: block;}
-    a.green-zone__details {margin-left: 0;}
-    .green-zone__logo a img {min-width: auto; width: 180px;}
-    .courses-page .green-zone__chapter h1 {font-size: 58px; }
-    .courses-page .green-zone__buttons {margin-top: 60px;}
-}
-
-.show-menu {transform: scaleY(1); opacity: 1;}
-
-.show-menu .green-zone__header-right .green-zone__phone {
-    a {
-        img {margin-right: 15px;}
-        span {font-size: 19px;}
-        span:last-child {font-size: 22px;}
-    }
-
-}
-
-@media screen and (max-width: 890px){
-    .course-list {
-        &__text{flex-wrap: wrap;}
-        &__about {width: 100%;}
-        &__time {width: calc(100% - 125px);}
-    }
-}
-
-@media screen and (max-width: 877px){
-    .quests-zone__right-square {padding: 30px;}
-    .quests-zone__about {
-        span {width: 100%; padding: 0;}
-    }
-    .contacts__right-head h2 {font-size: 42px; }
-    .contacts__left-head h2 {font-size: 42px;}
-    .courses-page h2 {font-size: 42px;}
-    .mentors__content h2 {font-size: 42px;}
-
-}
-@media screen and (max-width: 825px){
-    .courses-page__image-bot img{top: auto; bottom: 0;}
-}
-
-@media screen and (max-width: 775px){
-    .course-list__time--small {width: 100%;}
-}
-
-
-@media screen and (max-width: 745px){
-    .contacts__right-content form {align-items: center;}
-    .js-input {width: 100%;}
-    .contacts__content {display: block;}
-    .contacts__right {width: 100%; padding-right: 20px; padding-top: 30px;
-        &:before {display: block;}
-    }
-    .contacts__right-head h2 {text-align: center;}
-    .contacts__left {  width: 100%; padding: 30px 55px; }
-    .contacts__left-head h2 {text-align: center;}
-    .program__get-program { flex-direction: column;
-        p {margin: 10px 0; text-align: center;}
-    }
-    .contacts__right.contacts-fix {padding-right: 10px;}
-    .contacts__right-content form textarea {width: 100%;}
-}
-
-@media screen and (max-width: 637px){
-    .course-list .green-zone__buttons {margin-top: 30px;}
-    .about__right {
-        padding: 0 20px;
-    }
-    .courses-page h2 {font-size: 40px;}
-    .mentors__content h2 {font-size: 40px;}
-    .quests-zone__header h2{font-size: 40px;}
-    .about__header h2 {font-size: 40px;}
-    .cources__header h2 {font-size: 40px;}
-    .friends__header h2 {font-size: 40px;}
-    .green-zone__chapter h1 {font-size: 40px;}
-    .contacts__left-head h2{font-size: 40px;}
-    .contacts__right-head h2 {font-size: 40px;}
-    .green-zone__chapter p {font-size: 22px;}
-    .about__left {display: none;}
-    .about__right {padding-left: 0; width: 100%; text-align: center;}
-    .quests-zone__chose {display: block;}
-    .quests-zone__right {width: 100%;}
-    .quests-zone__radios {display: flex; justify-content: center; flex-direction: row; margin-bottom: 25px;
-        label {display: flex; align-items: center; justify-content: flex-start; position: relative; width: 135px;
-            span {text-transform: uppercase;  font-style: normal;}
-            input {opacity: 0;}
-            i {width: 135px; height: 65px; border-color: #0d8265;  position: relative; display: flex; align-items: center; justify-content: center;  transition: all 0.1s;
-                &:hover {background-color: #0d8265; border-color: #0d8265;}
-            }
-            input:checked + i{ background-color: #0d8265; opacity: 1; border-color: #0d8265; }
-            input:checked ~ i span {color: #ffffff; z-index: 10;}
-            i {width: 135px; height: 65px; border-color: #0d8265; position: relative;  display: flex; align-items: center; justify-content: center; }
-            &:first-child i { border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 0; border: 1px solid #e8e8e8; border-right: none; cursor: pointer;
-                &:hover {border-color: #0d8265;}
-            }
-            &:last-child i { border-bottom-right-radius: 5px; border-top-right-radius: 5px; border: 1px solid #e8e8e8 ;border-bottom-left-radius: 0px; border-left: none; cursor: pointer;
-                &:hover {border-color: #0d8265;}
-            }
-        }
-    }
-    .courses-page__image {display: none;}
-    .courses-page__text {width: 100%; text-align: center;
-        ul {text-align: left;}
-    }
-    .courses-page__specialist {padding-bottom: 45px;
-    }
-    .courses-page__text ul li {position: relative; text-align: center;
-        &:before {position: absolute; top: 0; left: 50%;  transform: translateX(-50%); }
-    }
-
-}
-
-@media screen and (max-width: 631px){
-    .green-zone__buttons {justify-content: center;
-        a {margin: 5px;}
-    }
-}
-
-@media screen and (max-width: 590px){
-    .course-list__boxes {flex-wrap: wrap;}
-    .course-list__box--small {width: 100%; padding: 10px 0;}
-}
-
-@media screen and (max-width: 510px){
-    a.green-zone__details { padding: 15px 51px;}
-    .green-zone__buttons a {margin-left: 0;}
-
-}
-
-@media screen and (max-width: 505px){
-    //.green-zone__buttons {flex-wrap: wrap; display: flex; justify-content: center; padding: 0 10px; }
-
-}
-
-@media screen and (max-width: 500px){
-    .mentors__person {flex-wrap: wrap;}
-    .mentors__img {width: 100%; text-align: center;
-        &>img {display: inline-block; min-width: auto;}
-    }
-
-    .course-list {
-        &__text {justify-content: center;}
-        &__date {padding: 10px;}
-        &__time {width: 100%; padding: 10px;}
-        &__about {text-align: center;}
-    }
-    .course-list__line--small { justify-content: center;}
-    .course-list__line {text-align: center;}
-}
-
-
-@media screen and (max-width: 467px){
-    .contacts__right {padding-right: 5px; padding-left: 0px;}
-    .contacts__left {padding-right: 10px; padding-left: 10px;}
-    .course-contacts .contacts__right {padding-right: 0;}
-}
-@media screen and (max-width: 457px){
-
-}
-@media screen and (max-width: 435px){
-    .quests-zone__header span:nth-child(1) {margin-right: -30px;}
-    .quests-zone__header span:nth-child(2) {padding: 16px 26px;}
-    .quests-zone__header span:nth-child(3) {margin-left: -30px;}
-    .cources__col {width: 100%;  }
-
-
-
-}
-@media screen and (max-width: 377px){
-    .program__get-program a{padding: 15px 20px;}
-    .quests-zone__right-bot > span, .quests-zone__right-top > span {font-size: 20px;}
-    .courses-page .green-zone__chapter h1 {font-size: 45px; }
-    .courses-page .green-zone__chapter {height: 85%;}
-    .contacts__right-content form input {width: 100%; }
-    .contacts__right-content form{ align-items: center;}
-    .contacts__right-content form textarea{ width: 100%;}
-    .contacts__left {padding-left: 0; padding-right: 0;}
-    .contacts__phone a span:last-child {font-size: 19px;}
-
-
-
-    .contacts__right.contacts-fix {padding-right: 0px;}
-
-}
-@media screen and (max-width: 350px){
-    .quests-zone__header span:nth-child(2) {padding: 9px 16px;}
-    .about {padding: 0 15px;}
-    .cources {
-        padding: 67px 20px 86px 20px;
-    }
-    .friends {
-        padding: 67px 20px 79px 20px;
-    }
-    .quests-zone__about a {width: 205px;}
-    .quests-zone__right {
-        padding: 0 10px;
-    }
-}
 
