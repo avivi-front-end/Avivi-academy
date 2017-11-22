@@ -74,7 +74,7 @@ $.validator.methods.email = function( value, element ) {
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
-        $('.tel-mask').mask('+3 (8099) 999-99-99 ');
+        $('.tel-mask').mask('+38 (099) 999-99-99 ');
     }
 }
 $(document).ready(function(){
