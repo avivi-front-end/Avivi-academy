@@ -1,0 +1,159 @@
+//= partials/head.html
+<div class="global-wrapper">
+    <!-- HEADER -->
+<header class="event-header">
+        <div class="hugger">
+            <div class="green-zone">
+                <img src="../images/event-top.jpg" alt="" data-object-fit>
+                <div class="green-zone__content">
+                    <img src="../images/event_bot.jpg" alt="" data-object-fit>
+                    <div class="green-zone__header">
+                        <div class="green-zone__header-left">
+                            <div class="green-zone__logo">
+                                <a href="#"><img src="../images/logo.png" alt=""></a>
+                            </div>
+                            <div class="green-zone__cross">
+                                <svg width="20" height="2">
+                                    <rect width="20" height="2" style="fill:rgb(255,255,255);" />
+                                </svg>
+                                <svg width="20" height="2">
+                                    <rect width="20" height="2" style="fill:rgb(255,255,255);" />
+                                </svg>
+                                <svg width="20" height="2">
+                                    <rect width="20" height="2" style="fill:rgb(255,255,255);" />
+                                </svg>
+                            </div>
+                            <div class="green-zone__menu">
+                                <ul>
+                                    <li><a href="#" data-pos="1">Курси</a></li>
+                                    <li><a href="#" data-pos="2">Івенти</a></li>
+                                    <li><a href="#" data-pos="3">Блог</a></li>
+                                </ul>
+                                <div class="green-zone__hoverer">
+                                    <div class="green-zone__hoverer-inn"></div>
+                                </div>
+                                <div class="green-zone__split"></div>
+                                <div class="green-zone__header-right">
+                                    <div class="green-zone__phone">
+                                        <a href="tel:+380674001182">
+                                            <img src="../images/phone.png" alt="">
+                                            <span>+38 &nbsp; </span>
+                                            <span>067 400 11 82</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="green-zone__chapter">
+                        <h1>JS meetup</h1>
+                        <p>Зустріч з двома технічними доповідями по React та React Native</p>
+                        <p class="event__date-line"><img src="../images/calendar-pic.png" alt="">20 листопада 2017</p>
+                            <a href="#" class="btn">Зареєструватись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="green-zone__white-string">
+                <div class="mbox">
+                    <div class="green-zone__sections">
+                        <div class="green-zone__section">
+                            <span>Ціна</span>
+                            <p>2600 грн/міс</p>
+                            <p>4680 грн/курс <br><span>(зі знижкою 10%)</span></p>
+                            <div>01</div>
+
+                        </div>
+                        <div class="green-zone__section">
+                            <span>Розклад</span>
+                            <p>вівторок, четвер <br> 18.30-20.30</p>
+
+                            <div>02</div>
+                        </div>
+                        <div class="green-zone__section">
+                            <span>Тривалість</span>
+                            <p>8 тижнів</p>
+
+                            <div>03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /HEADER -->
+    //= partials/p-event-content.html
+    <div class="contacts">
+        <div class="mbox">
+            <div class="contacts__content">
+                <div class="contacts__left">
+                    <div class="contacts__left-head">
+                        <h3>Контакти</h3>
+                    </div>
+                    <div class="contacts__rows">
+                        <div class="contacts__location contacts__row">
+                            <div class="contacts__content-row">
+                                <div class="contacts__row-img">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#pointer"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>м. Хмельницький</p>
+                                    <p>вул. Подільська, 109</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__phone contacts__row">
+                            <a href="tel:+380674001182" class="contacts__content-row">
+                                <div class="contacts__row-img">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>+38 </span>
+                                <span>067 400 11 82</span>
+                            </a>
+                        </div>
+                        <div class="contacts__mail contacts__row">
+                            <a href="mailto:hello@avivi.academy" class="contacts__content-row">
+                                <div class="contacts__row-img contacts__img-hover">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#mail"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p>hello@avivi.academy</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__right">
+                    <div class="contacts__right-head">
+                        <h3>Пiдписатись На Оновлення</h3>
+                    </div>
+                    <div class="contacts__right-content">
+                        <form action="">
+                            <input type="text" placeholder="Прізвище Ім'я" required="required">
+                            <input type="text" placeholder="Електронна Пошта" required="required">
+                            <p></p>
+                            <textarea name="" id="" cols="10" rows="10" placeholder="Повідомлення"></textarea>
+                            <div class="contacts__right-button">
+                                <button type="submit" class="btn">Написати</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    //= partials/hidden-block.html
+    //= partials/footer.html
+</div>
+</body>
+</html>
