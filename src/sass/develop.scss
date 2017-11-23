@@ -523,22 +523,22 @@ h4{font-size: 20px;}
 }
 
 
+.white-string {
+    &__sections {display: flex; justify-content: center; align-items: flex-start; padding-top: 35px; flex-wrap: wrap;}
+    &__section { position: relative; padding-top: 74px; padding-bottom: 20px; margin: 0px 100px; width: 120px;
+        p { font-size: 18px; white-space: nowrap; }
+    }
+    &__under {font-size: 15px; white-space: nowrap; color: #00674d; font-weight: 700;}
+    &__title {font-size: 22px; font-weight: 700; color: #00674d;}
+    &__number {position: absolute; top: 0; left: -78px; font-size: 168px; color: #363636; opacity: 0.05; z-index: -1; font-weight: 100;}
+}
 
 .courses-page {
     .green-zone {
         &__chapter {
             p { display: flex; align-items: center;
                 img {margin-right: 15px;}
-
             }
-        }
-        &__sections {display: flex; justify-content: center; align-items: flex-start; padding-top: 35px; flex-wrap: wrap;}
-        &__section { position: relative; padding-top: 74px; padding-bottom: 20px; margin: 0px 100px;
-            span {font-size: 22px; font-weight: 700; color: #00674d;}
-            p { font-size: 18px; white-space: nowrap;
-                span {font-size: 15px; white-space: nowrap;}
-            }
-            div {position: absolute; top: 0; left: -78px; font-size: 168px; color: #363636; opacity: 0.05; z-index: -1; font-weight: 100;}
         }
         &__buttons .btn{margin-left: 20px;}
     }
