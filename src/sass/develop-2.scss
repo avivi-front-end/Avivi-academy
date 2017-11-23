@@ -86,7 +86,7 @@
 }
 .event{
     &-header{
-        .green-zone__chapter{margin-top: 102px; width: 51.5%; padding: 0 5px;
+        .green-zone__chapter{margin-top: 102px; width: 51.5%; padding: 0 5px; padding-left: 90px;
             p{font-family: "ProximaNova", Arial, sans-serif; font-size: 30px;}
             h1{margin-bottom: 30px; font-size: 75px;}
         }
@@ -186,7 +186,7 @@
         }
         &__text{padding: 24px 27px 35px;}
         &-header{
-            .green-zone__chapter{width: 100%; margin-top: 70px;}
+            .green-zone__chapter{width: 100%; margin-top: 70px; padding-left: 0;}
             .green-zone__content > img{height: 570px;}
             .event__date-line{margin-top: 10px;}
             .btn{margin-top: 20px;}
