@@ -143,9 +143,6 @@
         &__title{font-size: 50px; font-weight: 300; line-height: 57px; margin-bottom: 98px; color: #1a1a1a; position: relative;
             b{display: block; text-transform: uppercase;}
         }
-        &__photo{height: 249px;
-            img{height: 100%; width: 100%; object-fit: cover;};
-        }
         &__number{text-shadow: 0px 0px 109.44px rgba(74, 74, 74, 0.25); z-index: -1; color: #e6e6e6; line-height: 254px; font-size: 370px; font-weight: 100; position: absolute; left: -23px; top: 50%; transform: translateY(-50%);
             &:after{
                 content: 'тема';
@@ -170,6 +167,9 @@
         p{font-size: 15px; margin: 0; line-height: 20px;
             &:not(:last-child){margin-bottom: 3px;}
         }
+        &__photo{height: 249px;
+            img{height: 100%; width: 100%; object-fit: cover;};
+        }
         &__text{padding: 44px 34px 48px 49px; position: relative;
             ul{font-size: 15px; list-style-type: none; color: #363636; padding-left: 16px; margin: 0;
                 li{position: relative; line-height: 17px;
@@ -192,11 +192,17 @@
 }
 @media(max-width: 1050px){
     .event{
+        &-card, &-program__text{width: auto;}
+        &-card{flex-shrink: 1; width: 200px;}
         &__block{width: 46%;
             &--big{width: 100%;
                 .event__title{margin-right: 10px;}
             }
         }
+        &-program{
+            &__text{width: 590px;}
+        }
+        &-card{width: 300px;}
     }
 }
 @media (min-width: 550px) and (max-width: 992px){
@@ -219,6 +225,21 @@
         &__content{padding-left: 15px; padding-right: 15px; padding-bottom: 40px;}
     }
     .event{
+        &__row{flex-direction: column; align-items: center;
+            &:nth-child(odd){flex-direction: column-reverse;}
+        }
+        &-program{
+            h2{padding-top: 70px;}
+            &__text{width: auto; padding: 0 20px;}
+            &__number{
+                &:after{display: none;}
+            }
+            &__title{margin-bottom: 35px; font-size: 40px; line-height: 39px;}
+        }
+        &-card{flex-shrink: 0; width: 330px;
+            &__text{padding: 14px 23px 18px;}
+            .event__social-links{right: 19px; top: 22px;}
+        }
         &__social-links{bottom: 17px; right: 30px;}
         &__block{width: 100%;
             &--big{
@@ -280,6 +301,11 @@
             &__date{margin-right: 17px; line-height: 50px;}
         }
         &__social-links{position: static; justify-content: center; order: 2;}
+        &-program{
+            h2{display: block;}
+            &__number{font-size: 230px;}
+            &__text{margin-bottom: 40px;}
+        }
     }
 }
 @media(max-width: 480px){
