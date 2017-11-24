@@ -85,6 +85,9 @@
     }
 }
 .event{
+    &__cont{
+        .btn{margin-top: 50px;}
+    }
     &__row{display: flex; justify-content: space-between; align-items: flex-start;
         &:not(:last-child){margin-bottom: 130px;}
     }
