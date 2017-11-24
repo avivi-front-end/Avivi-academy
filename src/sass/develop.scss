@@ -628,24 +628,29 @@ h4{font-size: 20px;}
     }
 }
 
+.box-href {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 5;
+    a {width: 100%; height: 100%; display: block; transition: all 0.2s;
+        &:hover {background-color: rgba(255, 255, 255, 0.1);}
+    }
+}
 
 .course-list {
 
     p {margin: 0;}
-    &__box {padding: 15px 0;
-        &--small {width: 49%;}
+    &__box {margin: 15px 0; position: relative;
+        &--small {width: 49%; position: relative;}
     }
     &__boxes { display: flex; justify-content: space-between; padding-bottom: 50px; padding-top: 15px;}
 
-    &__box:first-child {padding-top: 75px;}
+    &__box:first-child {margin-top: 75px;}
     .green-zone__chapter {
         p { display: flex; align-items: center;
             img {margin-right: 15px;}
         }
     }
     &__img {width: 100%; height: 290px; overflow: hidden; position: relative;
-        a {transition: all 0.2s;}
-        a:hover {opacity: 0.9;}
+
+
         img {object-fit: cover; width: 100%; height: 100%; border-top-right-radius: 5px; border-top-left-radius: 5px;}
         p {position: absolute; bottom: 25px; left: 25px; color: #ffffff; font-size: 18px; font-weight: 300; letter-spacing: 2px;}
     }
@@ -657,7 +662,7 @@ h4{font-size: 20px;}
         p {margin: 0;}
         p:nth-child(1) {font-weight: 700; font-size: 60px; color: #0d8265; line-height: 52px;}
         p:nth-child(2) {font-family: ProximaNovaCond, sans-serif; font-size: 22px; font-weight: 700; color: #4f4f4f;}
-        p:nth-child(3) {font-size: 18px; color: 4f4f4f; letter-spacing: 12px; font-weight: 300;}
+        p:nth-child(3) {font-size: 18px; color: #4f4f4f; letter-spacing: 12px; font-weight: 300;}
         &--small {padding: 25px 5px 5px 25px; display: flex;
             span {font-size: 56px; font-weight: 700; line-height: 41px; color: #acacac; margin-right: 10px;}
             span p:first-child {font-size: 19px; font-family: ProximaNovaCond, sans-serif; line-height: 16px; margin-bottom: 6px;}
@@ -672,7 +677,7 @@ h4{font-size: 20px;}
         }
     }
     &__line-col { padding: 0 10px;
-        &:last-child {align-self: flex-end; display: flex;}
+        &:last-child {align-self: flex-end; display: flex; z-index: 20;}
         a {margin: 5px;}
         a svg{fill: #a6a6a6;}
         a:hover svg {fill: #0d8265;}
