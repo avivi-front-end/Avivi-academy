@@ -198,9 +198,15 @@ span:last-child {font-size: 22px;}
     .courses-page__image-bot img{top: auto; bottom: 0;}
 }
 
+@media screen and (max-width: 800px){
+    .white-string__number {left: -20px;}
+}
+
 @media screen and (max-width: 775px){
     .course-list__time--small {width: 100%;}
 }
+
+
 
 
 @media screen and (max-width: 745px){

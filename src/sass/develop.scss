@@ -531,6 +531,12 @@ h4{font-size: 20px;}
     &__under {font-size: 15px; white-space: nowrap; color: #00674d; font-weight: 700;}
     &__title {font-size: 22px; font-weight: 700; color: #00674d;}
     &__number {position: absolute; top: 0; left: -78px; font-size: 168px; color: #363636; opacity: 0.05; z-index: -1; font-weight: 100;}
+    .slick-next { min-width: 20px; min-height: 20px;  border-left: 3px solid grey; border-bottom: 3px solid grey; transform: rotateZ(-135deg); top: 43%; z-index: 10; right: -10;
+        &:before {content: '';}
+    }
+    .slick-next:hover {border-left: 3px solid #0d8265; border-bottom: 3px solid #0d8265;}
+    .slick-prev {min-width: 20px; min-height: 20px;  border-left: 3px solid grey; border-bottom: 3px solid grey; transform: rotateZ(45deg); top: 43%; z-index: 10; left: -10;}
+    .slick-prev:hover {border-left: 3px solid #0d8265; border-bottom: 3px solid #0d8265;}
 }
 
 .courses-page {
@@ -638,6 +644,8 @@ h4{font-size: 20px;}
         }
     }
     &__img {width: 100%; height: 290px; overflow: hidden; position: relative;
+        a {transition: all 0.2s;}
+        a:hover {opacity: 0.9;}
         img {object-fit: cover; width: 100%; height: 100%; border-top-right-radius: 5px; border-top-left-radius: 5px;}
         p {position: absolute; bottom: 25px; left: 25px; color: #ffffff; font-size: 18px; font-weight: 300; letter-spacing: 2px;}
     }
