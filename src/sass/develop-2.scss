@@ -162,7 +162,9 @@
         .event__social-links{right: 49px; top: 52px; bottom: auto;}
         &__name{font-size: 30px; padding-right: 65px; color: #353535; line-height: 36px;}
         &__info{font-weight: 300; font-size: 14px; margin-bottom: 23px; color: #353535; line-height: 24px;
-            a{color: #0d8265;}
+            a{color: #0d8265;
+                &:hover{text-decoration: none;}
+            }
         }
         p{font-size: 15px; margin: 0; line-height: 20px;
             &:not(:last-child){margin-bottom: 3px;}
