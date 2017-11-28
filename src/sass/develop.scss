@@ -578,14 +578,14 @@ h4{font-size: 20px;}
 }
 
 .mentors {padding: 0 0 70px 0;
-    &__people {display: flex; justify-content: space-between;}
+    &__people {display: flex; justify-content: space-between; flex-wrap: wrap;}
     &__about {padding: 20px;  padding-left: 35px; width: 100%;
         p { margin-top: -5px;}
     }
     &__content {
         h2 {text-align: center;}
     }
-    &__person {border: 1px solid #ebebeb; display: flex; width: 48%; border-radius: 5px;
+    &__person {border: 1px solid #ebebeb; display: flex; width: 48%; border-radius: 5px; margin-top: 10px; margin-bottom: 10px;
 
         p {font-size: 13px;}
         a {color: #0d8265; font-weight: 700;
