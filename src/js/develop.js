@@ -37,14 +37,13 @@ function mouseOn() {
                 stick.animate({left: left_pos-18},{duration: 200, width: "linear"});
                 stick.css('display','block');
             }
-
     });
 }
 
 function mouseLeave() {
     $(document).on('mouseleave', '.green-zone__menu', function () {
         var stick = $('.green-zone__hoverer');
-        stick.animate({left: '70%'},{duration: 200, width: "linear"});
+        stick.animate({left: '50.5%'},{duration: 200, width: "linear"});
         stick.animate({opacity: 0},{duration: 50});
     });
 }
@@ -208,6 +207,17 @@ $(document).ready(function () {
                 }
             }
         ]
+    });
+
+
+    $('.course-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        // autoplay: true,
+        // autoplaySpeed: 4000
     });
 
 

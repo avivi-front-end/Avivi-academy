@@ -195,7 +195,7 @@ h4{font-size: 20px;}
     }
     &__split {width: 26%; height: 2px;}
 
-    &__hoverer {width: 85px; height: 16px; background-color: rgba(255,255,255,0.08); border-radius: 8px; top: 81px; left: 70%; position: absolute; display: none;}
+    &__hoverer {width: 85px; height: 16px; background-color: rgba(255,255,255,0.08); border-radius: 8px; top: 81px; left: 50.5%; position: absolute; display: none;}
     &__hoverer-inn { width:75px; height: 6px; background-color: #fff424; position: absolute; top: 5px; left: 5px; border-radius: 2px;}
     &__phone { display: flex; align-items: center; color: #ffffff;  font-size: 19px; font-weight: 300; padding: 18px 0px 24px 0px; z-index: 50; opacity: 0; white-space: nowrap;
         a {text-decoration: none; color: #ffffff; display: flex; align-items: center;}
@@ -539,8 +539,9 @@ h4{font-size: 20px;}
     .slick-prev:hover {border-left: 3px solid #0d8265; border-bottom: 3px solid #0d8265;}
 }
 
+.course-slide {}
 .courses-page {
-    .green-zone {
+    .green-zone { position: relative;
         &__chapter {
             p { display: flex; align-items: center;
                 img {margin-right: 15px;}
@@ -549,7 +550,7 @@ h4{font-size: 20px;}
         &__buttons .btn{margin-left: 20px;}
     }
 
-
+    .green-zone__menu {z-index: 5;}
 
     h2 {text-align: center; color: #013021;}
     &__top { display: flex;}
@@ -696,6 +697,11 @@ h4{font-size: 20px;}
 
 
 
+.slick-dots {bottom: 0; right: 21%; width: 20%;}
+//.slick-dots li.slick-active button {content: ''; background-color: #ffffff; width: 10px; height: 10px; border-radius: 50%;}
+.slick-dots li.slick-active button:before {content: ''; background-color: #0d8265; width: 10px; height: 10px; border-radius: 50%; opacity: 1; z-index: 1;}
+.slick-dots li.slick-active button:after {content: ''; background-color: #ffffff;  width: 20px; height: 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; display: block; top: -5px; left: -5px; position: absolute; opacity: 0.2; z-index: 0;}
+.slick-dots li button:before {background-color: #ffffff; width: 10px; height: 10px; border-radius: 50%; content: ''; opacity: 0.9;}
 
 
 

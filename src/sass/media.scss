@@ -158,10 +158,11 @@
     a.green-zone__details {margin-left: 0;}
     .green-zone__logo img {min-width: auto; width: 190px;}
     .courses-page .green-zone__chapter h1 {font-size: 58px; }
-    .courses-page .green-zone__buttons {margin-top: 60px;
+    .courses-page .green-zone__buttons {margin-top: 15px;
         a {margin: 10px;}
     }
-
+    .courses-page .green-zone__menu {height: 480px;}
+    .slick-dots {right: auto;width: 100%;}
 }
 
 .show-menu {transform: scaleY(1); opacity: 1;}
