@@ -210,14 +210,14 @@ $(document).ready(function () {
     });
 
 
-    $('.course-slider').slick({
+    $('.main-slider').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        // autoplay: true,
-        // autoplaySpeed: 4000
+        autoplay: true,
+        autoplaySpeed: 5000
     });
 
 

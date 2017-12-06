@@ -106,6 +106,8 @@ input, textarea{
 @include font-face('ProximaNova', 'ProximaNova-RegularIt', 400, italic);
 @include font-face('ProximaNova', 'ProximaNova-Light', 300);
 @include font-face('ProximaNova', 'ProximaNova-LightIt', 300, italic);
+@include font-face('ProximaNova', 'ProximaNova-Thin', 100);
+@include font-face('ProximaNova', 'ProximaNova-ThinIt', 100, italic);
 @include font-face('ProximaNovaCond', 'ProximaNovaCond-Bold', 700);
 
 h1{font-size: 75px;}
@@ -144,11 +146,13 @@ h4{font-size: 20px;}
 }
 
 .main-header {
+
     .btn {margin-left: 20px;}
+    .green-zone__menu {z-index: 1;}
 }
 
-.green-zone {width: 100%; height: auto; background-repeat: no-repeat; z-index: 20;
-    &>img { position: absolute; z-index: 50; clip-path: inset(0px 1920px 0px -470px); width: 100%; object-fit: cover;}
+.green-zone {width: 100%; height: auto; background-repeat: no-repeat; z-index: 20; position: relative;
+    &>img { position: absolute; clip-path: inset(0px 1920px 0px -470px); width: 100%; object-fit: cover;}  // z-index: 50;
     &__content {position: relative; top:0;
         &>img {position: relative; z-index: -1;}
     }
@@ -541,7 +545,7 @@ h4{font-size: 20px;}
 
 .course-slide {}
 .courses-page {
-    .green-zone { position: relative;
+    .green-zone { 
         &__chapter {
             p { display: flex; align-items: center;
                 img {margin-right: 15px;}
@@ -697,7 +701,7 @@ h4{font-size: 20px;}
 
 
 
-.slick-dots {bottom: 0; right: 21%; width: 20%;}
+.slick-dots {bottom: 5%; right: 21%; width: 20%;}
 //.slick-dots li.slick-active button {content: ''; background-color: #ffffff; width: 10px; height: 10px; border-radius: 50%;}
 .slick-dots li.slick-active button:before {content: ''; background-color: #0d8265; width: 10px; height: 10px; border-radius: 50%; opacity: 1; z-index: 1;}
 .slick-dots li.slick-active button:after {content: ''; background-color: #ffffff;  width: 20px; height: 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; display: block; top: -5px; left: -5px; position: absolute; opacity: 0.2; z-index: 0;}

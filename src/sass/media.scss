@@ -161,8 +161,8 @@
     .courses-page .green-zone__buttons {margin-top: 15px;
         a {margin: 10px;}
     }
-    .courses-page .green-zone__menu {height: 480px;}
-    .slick-dots {right: auto;width: 100%;}
+    .main-header .green-zone__menu {height: 480px; z-index: 1;}
+    .slick-dots {right: auto;width: 100%; bottom: -15px;}
 }
 
 .show-menu {transform: scaleY(1); opacity: 1;}
