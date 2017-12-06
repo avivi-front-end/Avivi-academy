@@ -292,6 +292,62 @@
 }
 .blog-head-h1 {  width: 60%;  }
 .contacts__right-button-blog {  margin-top: 80px;  }
+.modal {
+  &__registration {
+    padding: 0;
+    min-height: 650px;
+    h4 {
+      font-size: 50px;
+      color: #013021;
+      margin: 0;
+      padding: 49px 0 42px;
+      text-align: center;
+      border-bottom: 1px solid #ebebeb;
+    }
+    p {
+      max-width: 320px;
+      margin: 70px auto 75px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 18px;
+      color: #353535;
+      line-height: 24px;
+    }
+  }
+  &__content--reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 12%;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1140px;
+    input[type="text"] {  width: 46.5%;  margin-bottom: 50px;  }
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000;
+      padding: 0 10px 5px;
+      margin-bottom: 50px;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      width: 46.5%;
+      &::placeholder {  color: #000000;  }
+    }
+    .btn {
+      flex-basis: 100%;
+      max-width: 300px;
+      align-self: center;
+      margin: 35px auto 0;
+    }
+  }
+}
 .slider-left {
   position: absolute;  margin-left: 0;  left: 0;  top: 50%;  transform: translateY(-50%);  z-index: 1; cursor: pointer;
   svg {  opacity: 1;  }
@@ -389,6 +445,11 @@
       .blog-post__head-h4 {  margin: 35px 0;  }
     }
   }
+  .modal {
+    &__registration {
+      h4 {  font-size: 40px;  }
+    }
+  }
 }
 @media screen and (max-width: 680px){
   .blog {
@@ -459,6 +520,24 @@
         line-height: 1.25em;
         text-align: center;
       }
+    }
+  }
+  .modal {
+    &__registration {
+      max-height: 100vmax;
+      h4 {  font-size: 34px;  padding-bottom: 30px;  }
+    }
+    &__content--reg {
+      margin: 0 10%;
+      p {  margin: 35px auto;  }
+    }
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      input[type="text"] {  width: 100%;  margin-bottom: 35px;  }
+      input {  margin-bottom: 35px;  width: 100%;  }
+      .btn {  margin: 0 auto;  }
     }
   }
 }
