@@ -29,6 +29,12 @@
     .courses-page h1 {font-size: 68px;}
 }
 
+@media screen and (max-width: 1275px){
+
+        .transparent-btn {padding: 18px 78px;}
+
+}
+
 @media screen and (max-width: 1250px){
     .green-zone__phone span{font-size: 16px; }
     .green-zone__phone span:last-child {font-size: 16px;}
@@ -149,7 +155,7 @@
     .green-zone__menu ul li{ padding: 25px 0;}
     .green-zone__menu ul a {padding: 0;}
     .green-zone__content > img {min-height: 480px; object-fit: cover;}
-    .green-zone__header {height: 100%;}
+    .green-zone__header {height: 15%;}
     .green-zone__header-right {width: 100%;}
     .green-zone__phone {padding-bottom: 55px; padding-top: 55px;}
     .green-zone__chapter {width: 100%; align-items: center; justify-content: center; text-align: center;}
@@ -163,6 +169,11 @@
     }
     .main-header .green-zone__menu {height: 480px; z-index: 1;}
     .slick-dots {right: auto;width: 100%; bottom: -15px;}
+    .main-page-header {
+        .green-zone>img {height: 570px;}
+        .green-zone__content > img {height: 570px;}
+    }
+    .btn-box {margin-top: 0;}
 }
 
 .show-menu {transform: scaleY(1); opacity: 1;}
@@ -388,3 +399,6 @@ ul {text-align: left;}
         padding: 0 10px;
     }
 }
+.plus-height { height:100%;}
+
+

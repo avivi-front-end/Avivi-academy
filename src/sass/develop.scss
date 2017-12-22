@@ -156,7 +156,7 @@ h4{font-size: 20px;}
     &__content {position: relative; top:0;
         &>img {position: relative; z-index: -1;}
     }
-    &__header { display: flex; justify-content: space-between; align-items: center; width: 100%; position: absolute;  top: 0;}
+    &__header { display: flex; justify-content: space-between; align-items: center; width: 100%; position: absolute;  top: 0; z-index:1;}
     &__header-left {display: flex; justify-content: flex-end;  align-items: center; width: 100%; padding: 0px 0px 65px 0px;}
     &__logo { z-index: 50; padding-top: 24px;  position: absolute; left:0; padding-left: 30px;
         img { min-width:221px;}
@@ -214,6 +214,7 @@ h4{font-size: 20px;}
         p {font-weight: 300; font-size: 35px; line-height: 41px; margin-bottom: 0; margin-top: 0;}
     }
 }
+
 
 .green-zone__cross.active {
     svg:first-child { transform: translateY(10px) rotateZ(45deg);}
@@ -496,7 +497,9 @@ h4{font-size: 20px;}
     &__coll-head {font-size: 12px; font-weight: 300; width: 25%;  padding-right: 20px;
         p {margin: 5px;}
     }
-    &__head-content {display: flex; justify-content: flex-start; align-items: center; padding: 10px 10px; letter-spacing: 0.8px;}
+    &__head-content {display: flex; justify-content: flex-start; align-items: center; padding: 10px 10px; letter-spacing: 0.8px;
+        .footer__coll:last-child {pointer-events: none;}
+    }
     &__coll-last { display: flex; align-items: flex-start;
         a {
             svg {fill: rgb(255, 255, 255);}
@@ -697,6 +700,11 @@ h4{font-size: 20px;}
         &--small {padding: 30px 12px 10px;}
     }
     .green-zone__buttons .btn{margin-left: 20px;}
+}
+
+.hugger {position: relative;}
+.btn-box {margin-top: 70px;
+    a {margin: 10px;}
 }
 
 
