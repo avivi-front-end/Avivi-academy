@@ -106,8 +106,29 @@
 }
 
 
-@media screen and (max-width: 1015px){
-
+@media screen and (max-width: 992px){
+    .quests-zone {padding-top: 20px; padding-bottom: 20px; }
+    .about__header {padding-top: 0px;
+        h2 {margin: 30px 0;}
+    }
+    .cources {padding-top: 0; padding-bottom: 0;
+        h2 {margin: 30px 0;}
+    }
+    .friends {
+        padding-top: 0;
+        padding-bottom: 0;
+        h2 {margin: 30px 0;}
+    }
+    .blog {margin-top: 50px;}
+    .blog__advantages_middle {margin-bottom: 50px;}
+    .mentors {padding-bottom: 35px;}
+    .program__content {padding-top: 1px; padding-bottom: 15px;}
+    .course-list__box:first-child {margin-top: 35px; }
+    .course-list__boxes {padding-bottom: 30px;}
+    .event .mbox > h2{ margin: 40px 0;}
+    .event-program .mbox > h2{padding: 35px 0;}
+    .event-program {padding-bottom: 40px;}
+    .four-o-four .event-header .green-zone__content > img {height: fit-content;}
 }
 @media screen and (max-width: 985px){
     .green-zone__chapter h1{margin-bottom: 10px;}
@@ -174,6 +195,7 @@
         .green-zone__content > img {height: 570px;}
     }
     .btn-box {margin-top: 0;}
+
 }
 
 .show-menu {transform: scaleY(1); opacity: 1;}
@@ -225,11 +247,11 @@ span:last-child {font-size: 22px;}
     .contacts__right-content form {align-items: center;}
     .js-input {width: 100%;}
     .contacts__content {display: block;}
-    .contacts__right {width: 100%; padding-right: 20px; padding-top: 30px;
+    .contacts__right {width: 100%; padding-right: 20px; padding-top: 1px;
         &:before {display: block;}
     }
     .contacts__right-head h3 {text-align: center;}
-    .contacts__left {  width: 100%; padding: 30px 55px; display: flex; flex-direction: column; align-items: center;}
+    .contacts__left {  width: 100%; padding: 0px 55px; display: flex; flex-direction: column; align-items: center;}
     .contacts__left-head h3 {text-align: center;}
     .program__get-program { flex-direction: column;
         p {margin: 10px 0; text-align: center;}
@@ -365,10 +387,13 @@ ul {text-align: left;}
     .quests-zone__header span:nth-child(2) {padding: 16px 26px;}
     .quests-zone__header span:nth-child(3) {margin-left: -30px;}
     .cources__col {width: 100%;  }
-
-
-
 }
+@media screen and (max-width: 410px){
+    .four-o-four .green-zone__chapter h1 {
+        font-size: 160px;
+    }
+}
+
 @media screen and (max-width: 377px){
     .program__get-program a{padding: 15px 20px;}
     .quests-zone__right-bot > span, .quests-zone__right-top > span {font-size: 20px;}
