@@ -3,6 +3,13 @@
     //= partials/event-header.html
     //= partials/event-content.html
     <div class="contacts">
+        <div class="contacts__map event-list-map js-map">
+            <div class="contacts__map-header">
+                <h3>Як Нас Знайти</h3>
+                <div class="contacts__map--cross js-map-close"></div>
+            </div>
+            <img src="../images/map.jpg" alt="" class="contacts__map-img">
+        </div>
         <div class="mbox">
             <div class="contacts__content">
                 <div class="contacts__left">
@@ -10,6 +17,33 @@
                         <h3>Контакти</h3>
                     </div>
                     <div class="contacts__rows">
+                        <div class="contacts__phone contacts__row">
+                            <a href="tel:+380674001182" class="contacts__content-row">
+                                <div class="contacts__row-img">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#phone"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>+38 </span>
+                                <span>067 400 11 82</span>
+                            </a>
+                        </div>
+
+                        <div class="contacts__mail contacts__row">
+                            <a href="mailto:hello@avivi.academy" class="contacts__content-row">
+                                <div class="contacts__row-img contacts__img-hover">
+                                    <div class="contacts__row-img-container">
+                                        <svg  width="100%" height="100%">
+                                            <use xlink:href="#mail"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p>hello@avivi.academy</p>
+                            </a>
+                        </div>
+
                         <div class="contacts__location contacts__row">
                             <div class="contacts__content-row">
                                 <div class="contacts__row-img">
@@ -26,31 +60,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts__phone contacts__row">
-                            <a href="tel:+380674001182" class="contacts__content-row">
-                                <div class="contacts__row-img">
-                                    <div class="contacts__row-img-container">
-                                        <svg  width="100%" height="100%">
-                                            <use xlink:href="#phone"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <span>+38 </span>
-                                <span>067 400 11 82</span>
-                            </a>
+                        <div class="contacts__pop-zone">
+                            <a href="#" class="btn btn__green--transparent js-sh-map" >як нас знайти</a>
                         </div>
-                        <div class="contacts__mail contacts__row">
-                            <a href="mailto:hello@avivi.academy" class="contacts__content-row">
-                                <div class="contacts__row-img contacts__img-hover">
-                                    <div class="contacts__row-img-container">
-                                        <svg  width="100%" height="100%">
-                                            <use xlink:href="#mail"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p>hello@avivi.academy</p>
-                            </a>
-                        </div>
+
                     </div>
                 </div>
                 <div class="contacts__right event__cont">

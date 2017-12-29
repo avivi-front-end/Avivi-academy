@@ -35,6 +35,9 @@
         &:hover{
             background: lighten(#0d8265, 10%);
         }
+        &--transparent {background-color: #ffffff; border: 2px solid #0d8265; color: #0d8265; transition: all 0.2s; font-weight: 700;
+            &:hover {background-color: #0d8265; color: #ffffff;}
+        }
     }
 }
 
