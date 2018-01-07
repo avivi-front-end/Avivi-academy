@@ -8,7 +8,6 @@
         left: 0%;
     }
 }
-
 @keyframes move-coll {
     0% {
         clip-path: inset(0px 100% 0px -24.4%);
@@ -23,7 +22,12 @@
     .contacts__map {height: 83%;}
     .contacts__map--cross {left: 64%;}
 }
-
+@media screen and (max-width: 1366px){
+    .main-page-header {
+        .green-zone>img {height: 800px;}
+        .green-zone__content > img {height: 800px;}
+    }
+}
 @media screen and (max-width: 1315px){
     .courses-page {
     .green-zone__buttons {margin-top: 20px;}
@@ -32,18 +36,15 @@
 @media screen and (max-width: 1310px){
     .courses-page h1 {font-size: 68px;}
 }
-
 @media screen and (max-width: 1275px){
     .transparent-btn {padding: 18px 78px;}
 }
-
 @media screen and (max-width: 1250px){
     .green-zone__phone span{font-size: 16px; }
     .green-zone__phone span:last-child {font-size: 16px;}
     .green-zone__phone img {margin-right: 10px;}
     .contacts {padding: 0 0px;}
 }
-
 @media screen and (max-width: 1250px){
     .green-zone__phone span{font-size: 12px; }
     .green-zone__phone span:last-child {font-size: 14px;}
@@ -51,14 +52,11 @@
     .green-zone__header-right {width: 26.75%;}
     .courses-page .green-zone__buttons {margin-top: 20px;}
 }
-
 @media screen and (max-width: 1200px){
     .courses-page h1 {font-size: 60px;}
     .contacts__map-header h3 {padding-right: 50px;}
     .contacts__map--cross {left: 80%;}
 }
-
-
 @media screen and (max-width: 1135px){
     .contacts__right {padding-left: 20px;}
     .courses-page h1 {font-size: 50px;}
@@ -67,11 +65,9 @@
     .transparent-btn {padding: 18px 78px;}
     a.btn {padding: 18px 46px;}
 }
-
 @media screen and (max-width: 1120px){
     .courses-page h1 {font-size: 45px; margin-bottom: 15px;}
 }
-
 @media screen and (max-width: 1100px){
     .green-zone__menu ul {padding-right: 50px;}
     .green-zone__chapter h1 {font-size: 65px;}
@@ -80,18 +76,11 @@
 @media screen and (max-width: 1097px){
     .quests-zone__button {margin-top: 20px;}
 }
-
-
-
-
-
 @media screen and (max-width: 1080px){
     .mentors__people { flex-wrap: wrap; justify-content: center;}
 
     .mentors__person {width: 70%; margin: 10px 0;}
-
 }
-
 @media screen and (max-width: 1055px){
     .contacts__right-head h3 {font-size: 65px;}
     .contacts__left-head h3 {font-size: 65px;}
@@ -100,14 +89,11 @@
     .course-list h1 {font-size: 45px;}
     .course-list .green-zone__chapter p{font-size: 20px;}
 }
-
 @media screen and (max-width: 1025px){
     .green-zone__chapter h1 {font-size: 45px;}
     .course-list .green-zone__buttons {margin-top: 55px;}
     .courses-page .green-zone__chapter {height: 75%;}
 }
-
-
 @media screen and (max-width: 992px){
     .quests-zone {padding-top: 20px; padding-bottom: 20px; }
     .about__header {padding-top: 0px;
@@ -135,22 +121,17 @@
 @media screen and (max-width: 985px){
     .green-zone__chapter h1{margin-bottom: 10px;}
 }
-
-
 @media screen and (max-width: 962px){
     .contacts__right-head h3 {font-size: 58px}
     .contacts__left-head h3 {font-size: 58px}
     .courses-page h2 {font-size: 58px;}
     .mentors__content h2 {font-size: 58px;}
 }
-
 @media screen and (max-width: 950px){
     .quests-zone__button {margin-top: 20px;}
 }
 @media screen and (max-width: 945px){
-
 }
-
 @media screen and (max-width: 940px){
     .cources__colls {flex-wrap: wrap;}
     .cources__col {width: 50%; padding: 10px; }
@@ -159,15 +140,11 @@
     .courses-page .green-zone__chapter h1 {font-size: 40px; margin-bottom: 5px;}
     .green-zone__chapter p{font-size: 20px;}
 }
-
 @media screen and (max-width: 935px){
     .green-zone__phone img {margin-right: 5px;}
     .contacts__map-header h3 {font-size: 36px; padding-left: 30px;}
     .contacts__map {height: 87%;}
 }
-
-
-
 @media screen and (max-width: 922px) {
     .green-zone__chapter {opacity: 1; left: 0%; animation-name: none;}
     .green-zone__cross {display: flex; position: absolute; right: 30px; top: 30px;}
@@ -199,28 +176,23 @@
         .green-zone__content > img {height: 570px;}
     }
     .btn-box {margin-top: 0;}
-
 }
 
 .show-menu {transform: scaleY(1); opacity: 1;}
-
 .show-menu .green-zone__header-right .green-zone__phone {
-a {
-img {margin-right: 15px;}
-span {font-size: 19px;}
-span:last-child {font-size: 22px;}
+    a {
+        img {margin-right: 15px;}
+        span {font-size: 19px;}
+        span:last-child {font-size: 22px;}
+    }
 }
-
-}
-
 @media screen and (max-width: 890px){
     .course-list {
-&__text{flex-wrap: wrap;}
-&__about {width: 100%;}
-&__time {width: calc(100% - 125px);}
+        &__text{flex-wrap: wrap;}
+        &__about {width: 100%;}
+        &__time {width: calc(100% - 125px);}
+    }
 }
-}
-
 @media screen and (max-width: 877px){
     .quests-zone__right-square {padding: 30px;}
     .quests-zone__about {
@@ -230,23 +202,16 @@ span:last-child {font-size: 22px;}
 .contacts__left-head h3 {font-size: 42px;}
 .courses-page h2 {font-size: 42px;}
 .mentors__content h2 {font-size: 42px;}
-
 }
 @media screen and (max-width: 825px){
     .courses-page__image-bot img{top: auto; bottom: 0;}
 }
-
 @media screen and (max-width: 800px){
     .white-string__number {left: -20px;}
 }
-
 @media screen and (max-width: 775px){
     .course-list__time--small {width: 100%;}
 }
-
-
-
-
 @media screen and (max-width: 745px){
     .contacts__right-content form {align-items: center;}
     .js-input {width: 100%;}
@@ -281,13 +246,10 @@ span:last-child {font-size: 22px;}
     .contacts__map.course-list-map img {height: 84%;}
     .contacts__map.event-list-map img {height: 92%;}
     .contacts__map.event-map img {height: 91%;}
-
 }
-
 @media screen and (max-width: 675px){
     .mentors__person {width: 100%;}
 }
-
 @media screen and (max-width: 637px){
     .course-list .green-zone__buttons {margin-top: 30px;}
     .about__right {
@@ -334,17 +296,14 @@ ul {text-align: left;}
 .courses-page__specialist {padding-bottom: 45px;
 }
 .courses-page__text ul li {position: relative; text-align: center;
-&:before {position: absolute; top: 0; left: 50%;  transform: translateX(-50%); }
+    &:before {position: absolute; top: 0; left: 50%;  transform: translateX(-50%); }
 }
-
 }
-
 @media screen and (max-width: 661px){
     .courses-page .green-zone__buttons a{margin-top: 0px;}
     .courses-page .green-zone__buttons {justify-content: center;}
     .courses-page .green-zone__buttons .btn{margin-left: 10px;}
 }
-
 @media screen and (max-width: 648px){
     .main-header .green-zone__buttons {justify-content: center; margin-top: 0;
         a {margin: 5px;}
@@ -353,31 +312,23 @@ ul {text-align: left;}
     .course-list .green-zone__buttons a{margin: 10px;}
     .course-list .green-zone__buttons .btn{margin-left: 10px;}
     .course-list .green-zone__buttons .green-zone__button-detais{ margin-bottom: 0px;}
-
 }
-
 @media screen and (max-width: 631px){
     .main-header .green-zone__buttons {justify-content: center;
     a {margin: 5px;}
+    }
 }
-}
-
 @media screen and (max-width: 590px){
     .course-list__boxes {flex-wrap: wrap;}
     .course-list__box--small {width: 100%; padding: 10px 0;}
 }
-
 @media screen and (max-width: 510px){
     a.green-zone__details { padding: 15px 51px;}
     .green-zone__buttons a {margin-left: 0;}
-
 }
-
 @media screen and (max-width: 505px){
 //.green-zone__buttons {flex-wrap: wrap; display: flex; justify-content: center; padding: 0 10px; }
-
 }
-
 @media screen and (max-width: 500px){
     .mentors__person {flex-wrap: wrap;}
     .mentors__img {width: 100%; text-align: center;
@@ -393,8 +344,6 @@ ul {text-align: left;}
 .course-list__line--small { justify-content: center;}
 .course-list__line {text-align: center;}
 }
-
-
 @media screen and (max-width: 467px){
     .contacts__right {padding-right: 5px; padding-left: 0px;}
     .contacts__left {padding-right: 10px; padding-left: 10px;}
@@ -414,7 +363,6 @@ ul {text-align: left;}
         font-size: 160px;
     }
 }
-
 @media screen and (max-width: 377px){
     .program__get-program a{padding: 15px 20px;}
     .quests-zone__right-bot > span, .quests-zone__right-top > span {font-size: 20px;}
@@ -425,11 +373,7 @@ ul {text-align: left;}
     .contacts__right-content form textarea{ width: 100%;}
     .contacts__left {padding-left: 0; padding-right: 0;}
     .contacts__phone a span:last-child {font-size: 19px;}
-
-
-
     .contacts__right.contacts-fix {padding-right: 0px;}
-
 }
 @media screen and (max-width: 350px){
     .contacts__map-header h3 {font-size: 35px;}

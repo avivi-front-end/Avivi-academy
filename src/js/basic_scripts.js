@@ -229,7 +229,7 @@ $(document).ready(function() {
 
     //oneHeightItems();
 
-    $('.footer_placeholder').height($('.footer').outerHeight());
+    $('.footer_placeholder').height($('.footer').outerHeight()-2);
 
     //goTo();
     //animationBlock($('.setion-animate'));
